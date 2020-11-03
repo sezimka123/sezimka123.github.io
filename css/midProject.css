@@ -20,7 +20,7 @@ div.transbox p {
 }
 
 div.background {
-  background: url(https://wallbox.ru/resize/1920x1080/wallpapers/main2/201727/fon-krasiva-cvetkom-pink.jpg) repeat;
+  background: url(/img folder/1.jpg) repeat;
   border: 2px solid black;
   width: 100%;
   float: right;
