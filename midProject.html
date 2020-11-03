@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Floristics for beginners</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="midProject.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Fleur<br>Essence</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#floral" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Floristics for beginners</a> 
+    <a href="#mattools" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials and tools</a> 
+    <a href="#Principles" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Principles</a> 
+    <a href="#Styles" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Styles</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-sand w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-sand w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Fleur Essence</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px">
+    <header><h1 class="w3-jumbo"><b>Fleur Essence</b></h1></header>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+  </div>
+  <!-- carousel -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://wallbox.ru/resize/1920x1080/wallpapers/main2/201727/fon-krasiva-cvetkom-pink.jpg">
+      <div class="carousel-caption">
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://wallpaperaccess.com/full/1095704.jpg">
+      <div class="carousel-caption">
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://img5.goodfon.ru/original/1920x1200/8/bd/tsvety-white-belye-rozovyi-fon-khrizantemy-flowers-beautiful.jpg">
+      <div class="carousel-caption">
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div class="w3-container" style="margin-top:80px">
+ <h1 class="w3-xxxlarge w3-text-teal" id="floral"><b>Floristics for beginners.</b></h1>
+ <hr style="width:50px;border:5px solid teal" class="w3-round">
+<div class="background">
+  <div class="transbox">
+    <p style="font-size:25px;">Floristics, or floral design is the art of making bouquets and other compositions 
+from various natural materials-flowers, leaves, herbs, fruits, etc.
+Some manage to create bouquets from dried fruits, soft toys, sweets, and even socks. 
+To become a professional florist, you need to pass special training. But after studying this article,
+you will be able to make an amazingly beautiful bouquet yourself.</p>
+  </div>
+ </div>
+</div>
+
+  <!-- Materials and tools -->
+<div class="w3-container" id="mattools" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-teal"><b>Materials and tools.</b></h1>
+  <hr style="width:50px;border:5px solid teal" class="w3-round">
+   <div class="background">
+    <div class="transbox">
+<p id="matHidden" style="font-size:25px;">To create floral compositions, you need to prepare the following materials. Floral sponge. It serves as the basis for compositions...</p>
+<button class="w3-button w3-teal w3-padding-large w3-hover-white" onclick="displayResult()">Show</button>
+<button class="w3-button w3-teal w3-padding-large w3-hover-white" onclick="hideResult()">Hide</button>
+  </div>
+ </div>
+ <img class="img" src="http://www.floranna.spb.ru/upload/iblock/5b5/5b57a887a0cb86223abcce8048351338.jpg" alt="Materials" width="650" height="444" style="float:middle">
+</div>
+
+
+ <!-- Principles -->
+  <div class="w3-container" id="Principles" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Principles of making floral compositions.</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+ <div class="background">
+   <div class="transbox">
+<p style="font-size:25px;">In floristry, as in any other art, there are rules and principles that must be strictly followed to create a beautiful composition that pleases the eye. Even very experienced florists don't make up bouquets at random.Ideally, a floral arrangement should meet the following requirements: harmony, that is, all elements form a single whole; the design corresponds to the chosen style; a variety of textures and structures of plants; a well-chosen color scheme, and here you will help the color circle; dynamism, the presence of one or more focal points; compliance with the Golden ratio rule; balance of all parts of the composition. We will analyze each quality in more detail, so that you can freely navigate the theory of Floristics.</p>
+  </div>
+ </div>
+</div>
+
+  <!-- Styles -->
+  <div class="w3-container" id="Styles" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Styles.</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <div class="background">
+    <div class="transbox">
+<p style="font-size:25px;">Vegetative style assumes that the composition should be as close as possible to the natural image. This style is characterized by a muted color palette, often using twigs, berries, moss and other natural materials. It is important to make sure that the plants belong to the same season. This is a very difficult style for beginners.</p>
+   </div>
+  </div>
+  <img class="img" src="https://i.pinimg.com/736x/d1/bb/84/d1bb84d2beb2eda64a6221ccd9609927--white-bouquets-flower-bouquets.jpg" alt="Vegetative style" width="650" height="444" style="float:middle">
+</div>
+
+<div class="w3-container" style="margin-top:75px">
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <div class="background">
+    <div class="transbox">
+<p style="font-size:25px;">Decorative style. Any combination of plants is allowed here, as long as they look organic, and none of them loses its zest. In decorative compositions, you can safely use the most unusual materials for finishing, the more textured they are, the better. Often used for decoration of premises and preparation of compositions with a floral sponge.</p>
+   </div>
+  </div>
+  <img class="img" src="https://flowerbouquets.info/wp-content/uploads/2020/05/korean-flower-bouquet-small-94-best-color-images-in-2020-from-korean-flower-bouquet-small.jpg" alt="Decorative style" width="650" height="444" style="float:middle">
+</div>
+  
+<div class="w3-container" style="margin-top:75px">
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <div class="background">
+    <div class="transbox">
+<p style="font-size:25px;">Linear style. The composition is built on the principle: clear lines, minimum materials, maximum naturalness. Most often, such compositions use plants with curved or long stems, and the elements are arranged asymmetrically.</p>
+   </div>
+  </div>
+  <img class="img" src="https://data.whicdn.com/images/309864093/original.png" alt="Linear style" width="150" height="444" style="float:middle">
+</div>
+
+<div class="w3-container" style="margin-top:75px">
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <div class="background">
+    <div class="transbox">
+<p style="font-size:25px;">Massive style. The composition has a clear shape. All elements are tightly connected to each other or to the frame. There are no strictly defined focus points, colors, size of buds and lines smoothly merge into each other.</p>
+   </div>
+  </div>
+  <img class="img" src="https://i.pinimg.com/736x/5f/dc/7b/5fdc7bde1470eadd7178b9f4b839a860.jpg" alt="Massive style" width="150" height="444"style="float:middle">
+</div>
+
+<div class="w3-container" style="margin-top:75px">
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/t7qlrjBj3rQ">
+</iframe>
+</div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>Contact us, if you have any questions or feedback.</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-teal w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+
+<!-- End page content -->
+</div>
+
+<footer>
+ <div class="w3-sand w3-container" style="margin-top:75px;padding-right:90px">
+  <p class="w3-right">Author: Sezimai Erali kyzy</p>
+ </div>
+ <div class="w3-sand w3-container" style="margin-top:0;padding-right:90px">
+  <p class="w3-right">Contact number: +996755200077</p>
+ </div>
+ <div class="w3-sand w3-container" style="margin-top:0;padding-right:90px">
+  <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>'s help</p>
+ </div>
+</footer>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Script for show and hide buttons
+function displayResult() {
+  document.getElementById("matHidden").innerHTML = "To create floral compositions, you need to prepare the following materials. Floral sponge. It serves as the basis for compositions. It is placed at the bottom of a container-a basket, hatbox, vases, for fixing flowers and other elements. Flowers stuck in it keep their freshness longer and can be watered. A thin, flexible wire.It is useful not only for strengthening the composition, but also for making its individual elements. Floral taping is necessary for closing sections on the stem, wire, packaging and decoration. It resembles with its properties an elegant electrical tape made of synthetic non-woven material. It is easily stretched, repeats the shape of the element, tightly and securely fixed thanks to the adhesive layer, prolongs the life of the cut plant. Vases, portbuketnitsy, satin ribbons of different colors, beautiful wrapping paper, baskets, hat boxes, plugs and other accessories for decoration. Just give a little advice: follow the fashion trends in floristry. In social networks, subscribe to famous florists or professional communities to keep up to date with all new products. As a technical wrapper, for example, for transportation or protection from damage, you can use a transparent film made of cellophane.? As for tools, first of all you will need: pruning shears, scissors, floral knife. It is desirable to have these tools in pairs: one-for household purposes (cutting ribbons, paper, etc.), the other strictly for cutting and processing flowers. Keep your tools sharp at all times. Blunt blades spoil plants, and this negatively affects the overall quality of the composition. Hot glue gun (the simplest model with a power of 100 to 150 W is enough). It is needed for connecting elements. Stapler for the same purpose.Wire cutters, pliers and pliers for working with wire. The color wheel is a very convenient cheat sheet, thanks to which you can accurately choose colors for bouquets and other compositions. For beginners, this is a must-have tool.? Tools for floristry should be of good quality, so that they are convenient and easy to work with. Cheap models usually fail very quickly.";
+}
+function hideResult() {
+  document.getElementById("matHidden").innerHTML ="To create floral compositions, you need to prepare the following materials. Floral sponge. It serves as the basis for compositions...";
+}
+
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>
