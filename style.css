@@ -37,7 +37,7 @@ div.transbox p {
 }
 
 div.background {
-  background: url(/img folder/1.jpg) repeat;
+  background: url(../img folder/1.jpg) repeat;
   border: 2px solid black;
   width: 100%;
   float: right;
